@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Trợ lý AI</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      width: 100%;
+      min-height: 100%;
+      font-family: Arial, sans-serif;
+      background: #f3f6fa;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      height: 100dvh;
+      overflow: hidden;
+    }
+
+    header {
+      height: 58px;
+      flex-shrink: 0;
+      background: #14263d;
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      gap: 12px;
+    }
+
+    .brand {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .status {
+      margin-left: auto;
+      font-size: 12px;
+      color: #b8d7ff;
+    }
+
+    main {
+      flex: 1;
+      min-height: 0;
+      padding: 8px;
+    }
+
+    .app-frame {
+      width: 100%;
+      height: 100%;
+      border: 1px solid #d8e1ec;
+      border-radius: 10px;
+      background: white;
+      overflow: hidden;
+    }
+
+    iframe {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    footer {
+      flex-shrink: 0;
+      text-align: center;
+      padding: 6px;
+      color: #64748b;
+      font-size: 11px;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        height: 48px;
+        padding: 0 12px;
+      }
+
+      .brand { font-size: 16px; }
+
+      main { padding: 0; }
+
+      .app-frame { border-radius: 0; }
+
+      footer { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">TRỢ LÝ AI</div>
+    <div class="status">Ứng dụng thông minh</div>
+  </header>
+
+  <main>
+    <div class="app-frame">
+      <iframe
+        src="YOUR_DIFY_WEB_APP_URL"
+        title="Ứng dụng Dify AI"
+        allow="microphone; clipboard-write"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </main>
+
+  <footer>
+    Cổng ứng dụng AI · Hỗ trợ trực tuyến
+  </footer>
+</body>
+</html>
