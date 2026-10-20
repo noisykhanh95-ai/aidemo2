@@ -22,14 +22,16 @@ Ngày kiểm tra: 20/10/2026, múi giờ Asia/Bangkok. Chạy bằng máy chủ 
 
 Kích thước dưới đây là kích thước yêu cầu; trình duyệt có thể làm tròn khoảng 1px do tỉ lệ hiển thị của thiết bị.
 
-| Kích thước | Chiều cao iframe quan sát | Tràn ngang trang ngoài | Bị cắt bởi khung ngoài |
+| Kích thước | Chiều cao khung gồm viền | Tràn ngang trang ngoài | Bị cắt bởi khung ngoài |
 | --- | --- | --- | --- |
-| Máy tính 1366 × 960 | Khoảng 805px | Không | Không |
-| Máy tính bảng 768 × 1024 | Khoảng 870px | Không | Không |
-| Điện thoại 390 × 844 | Khoảng 750px | Không | Không |
-| Điện thoại nhỏ 360 × 640 | Khoảng 701px | Không | Không |
+| Máy tính 1366 × 960 | Khoảng 540px | Không | Không |
+| Máy tính bảng 768 × 1024 | Khoảng 583px | Không | Không |
+| Điện thoại 390 × 844 | Khoảng 503px | Không | Không |
+| Điện thoại nhỏ 360 × 640 | Khoảng 472px | Không | Không |
 
-Đã xem ảnh máy tính và điện thoại để kiểm tra bố cục. Tiêu đề dùng ngắt dòng cân bằng trên màn hình hẹp. Khung ngoài tối thiểu 706px gồm viền, để phần chatbot bên trong có khoảng 700px; không đặt chiều cao tối thiểu riêng làm iframe vượt khung như bản cũ. Người dùng có thể cuộn trang tới phần liên hệ trên màn hình thấp.
+Đã thu nhỏ chatbot theo yêu cầu mới và cập nhật ảnh chạy thử. Trên máy tính 1366 × 960, khung rộng khoảng 863px (65,5% bề rộng nội dung, sau khi trừ khoảng cách giữa cột), cao khoảng 540px, tương ứng gần 2/3 chiều rộng và chiều cao bản trước. Bên trái khung chừa khoảng 456px gồm khoảng cách giữa cột; vùng trống phía trên cao tối thiểu 48px, phía dưới 72px, cùng các khoảng cách giữa hàng.
+
+Trên điện thoại, giữ đủ chiều ngang để không bó hẹp ô nhập, giảm chiều cao còn khoảng 2/3 bản trước với mức tối thiểu 472px gồm viền. Cột trái trống được ẩn; khi bổ sung nội dung sẽ xếp phía trên chatbot. Không có nội dung mẫu trong các vùng trống. Tiêu đề, link chatbot, quyền iframe và số điện thoại giữ nguyên. Người dùng có thể cuộn trang tới phần liên hệ trên màn hình thấp.
 
 ## Phạm vi chưa xác minh
 

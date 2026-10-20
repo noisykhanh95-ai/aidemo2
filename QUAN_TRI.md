@@ -106,4 +106,14 @@ Trước mỗi lần sửa lớn, giữ bản ZIP hoạt động tốt. Khi bàn
 
 GitHub Pages phục vụ tệp tĩnh; đăng nhập quản trị thật, cơ sở dữ liệu hoặc xử lý hồ sơ cần dịch vụ phía máy chủ phù hợp. [GitHub Pages là gì](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages).
 
-Website không đọc được trạng thái đăng nhập, phản hồi hoặc lịch sử trong iframe khác tên miền. Không coi sự kiện iframe tải xong là chứng nhận chatbot khỏe. Nội dung trả lời và việc quản lý dữ liệu nằm ở Dify; việc kiểm tra giao diện không thay thế rà soát tính chính xác của kiến thức chatbot. Trên điện thoại thấp, có thể cần cuộn trang để tới phần liên hệ; khung chat giữ khoảng 700px tối thiểu để có chỗ trò chuyện.
+Website không đọc được trạng thái đăng nhập, phản hồi hoặc lịch sử trong iframe khác tên miền. Không coi sự kiện iframe tải xong là chứng nhận chatbot khỏe. Nội dung trả lời và việc quản lý dữ liệu nằm ở Dify; việc kiểm tra giao diện không thay thế rà soát tính chính xác của kiến thức chatbot. Trên điện thoại thấp, có thể cần cuộn trang để tới phần liên hệ. Khung ngoài tối thiểu 472px, không còn áp dụng mức tối thiểu 700px của bản trước.
+
+## 9. Thêm thông tin vào các khoảng trống mới
+
+Trong `index.html`, ba vùng đã có chú thích để tìm nhanh:
+
+- `information-top`: vùng phía trên chatbot, phù hợp thông báo hoặc hướng dẫn ngắn.
+- `information-left`: cột bên trái chatbot trên máy tính, phù hợp thông tin hữu ích hoặc liên kết.
+- `information-bottom`: vùng phía dưới chatbot, trước thông tin liên hệ.
+
+Thêm nội dung HTML vào giữa thẻ mở/đóng của vùng tương ứng. Hiện các vùng để trống theo yêu cầu, không có nội dung mẫu trên trang. Cột trái chiếm khoảng 1/3 phần nội dung, chatbot chiếm khoảng 2/3 sau khi trừ khoảng cách giữa cột. Chiều cao chatbot cũng giảm còn khoảng 2/3 so với bản trước, tối thiểu 472px gồm viền. Trên điện thoại, cột trái sẽ xếp phía trên chatbot khi có nội dung; khi trống thì tự ẩn. Khung chatbot dùng đủ chiều ngang điện thoại để giữ ô nhập dễ sử dụng.
