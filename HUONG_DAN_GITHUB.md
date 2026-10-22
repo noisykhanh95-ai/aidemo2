@@ -69,7 +69,7 @@ Thay `TEN_TAI_KHOAN` bằng tên thật; nếu tên kho khác thì phần cuối
 
 Trong tab **Actions**, mở lần chạy xuất bản gần nhất để xem trạng thái và bước lỗi nếu có. Chờ hoàn tất rồi thử lại trang. [Xem lịch sử chạy](https://docs.github.com/en/actions/how-tos/monitor-workflows/view-workflow-run-history).
 
-Sau đó tự kiểm tra: đúng tiêu đề version 1.1; nền xanh mạ non; chatbot hiện ô nhập; liên hệ đúng Công an xã Lệ Thủy và số 0323.882.768. Thử trên điện thoại thật và một câu hỏi chung không chứa thông tin cá nhân.
+Sau đó tự kiểm tra: đúng tiêu đề version 1.1; nền xám sáng, điểm nhấn xanh than; chatbot hiện ô nhập; liên hệ đúng Công an xã Lệ Thủy và số 0323.882.768. Thử trên điện thoại thật và một câu hỏi chung không chứa thông tin cá nhân.
 
 ## 6. Cập nhật trang đã có
 

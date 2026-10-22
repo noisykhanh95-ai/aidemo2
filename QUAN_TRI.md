@@ -25,9 +25,9 @@ window.CHATBOT_CONFIG = {
   title: "Trợ lý ảo AI CAX LỆ THỦY version 1.1",
   chatbotUrl: "https://udify.app/chatbot/HjnCerBBdMUvrvvO",
   colors: {
-    primary: "#B8E65C",
-    background: "#F1F8E5",
-    text: "#203512"
+    primary: "#263D52",
+    background: "#F3F5F7",
+    text: "#213044"
   },
   contact: {
     organization: "Công an xã Lệ Thủy",
@@ -38,7 +38,7 @@ window.CHATBOT_CONFIG = {
 
 - `title`: tiêu đề chính và tên thẻ trình duyệt.
 - `chatbotUrl`: URL ở thuộc tính `src` trong mã iframe Dify; không dán nguyên đoạn iframe, link quản trị hoặc API key.
-- `colors.primary`: xanh mạ non của phần trên trang và viền khung.
+- `colors.primary`: xanh than của phần trên trang và viền khung.
 - `colors.background`: nền nhạt phía dưới.
 - `colors.text`: màu chữ trang ngoài. Giữ chữ đủ đậm để dễ đọc.
 - `contact.organization`: tên đơn vị.
@@ -46,7 +46,7 @@ window.CHATBOT_CONFIG = {
 
 Chương trình nhận mã màu dạng `#RRGGBB`. Giá trị sai định dạng sẽ giữ màu mặc định. Số điện thoại không hợp lệ sẽ hiển thị dưới dạng chữ, không tạo liên kết gọi sai.
 
-Màu favicon hiện cố định trong `favicon.svg`; đổi `fill="#B8E65C"` và `stroke="#203512"` nếu muốn đồng bộ khi đổi chủ đề. Nếu thay tiêu đề/link/liên hệ lâu dài, cập nhật cả nội dung mặc định trong `index.html` để giao diện vẫn đúng khi JavaScript bị tắt. Nếu thay màu mặc định, đồng bộ ba biến đầu `styles.css` và thẻ `theme-color` trong `index.html`.
+Biểu tượng favicon là chữ LT trên nền xanh than trong `favicon.svg`; sửa màu nền và màu chữ trong tệp nếu muốn đồng bộ khi đổi chủ đề. Nếu thay tiêu đề/link/liên hệ lâu dài, cập nhật cả nội dung mặc định trong `index.html` để giao diện vẫn đúng khi JavaScript bị tắt. Nếu thay màu mặc định, đồng bộ ba biến đầu `styles.css` và thẻ `theme-color` trong `index.html`.
 
 ## 3. Xem trước rồi cập nhật
 
@@ -80,7 +80,7 @@ Cách khôi phục phù hợp với bộ mã nhỏ này:
 
 Mở ứng dụng chatbot trong Dify bằng tài khoản có quyền sửa. Phần soạn thảo ứng dụng dùng để chỉnh hướng dẫn cho AI, lời chào, biến, luồng xử lý, mô hình và nguồn kiến thức. Thử trong vùng xem trước trước khi bấm **Publish**; kiểm tra lại link công khai sau khi xuất bản. [Các tính năng trong Chat Web App](https://docs.dify.ai/en/cloud/use-dify/publish/webapp/web-app-settings).
 
-Để tìm tùy chỉnh màu, mở **Access Point → Web App**, tìm phần **Settings**/tùy chỉnh giao diện. Một số phiên bản đặt mục này dưới **Publish**. Trong các lựa chọn hiện có về giao diện/chủ đề/màu, ưu tiên chủ đề sáng và màu `#B8E65C` nếu có ô màu. Tính năng và nhãn phụ thuộc phiên bản/gói. Lưu và Publish rồi mở lại chatbot. Không có tùy chọn tương ứng thì giao diện iframe vẫn theo Dify; CSS của website không đổi được nội dung khác tên miền bên trong nó. [Thiết lập Web App Dify](https://docs.dify.ai/en/cloud/use-dify/publish/webapp/web-app-settings).
+Để tìm tùy chỉnh màu, mở **Access Point → Web App**, tìm phần **Settings**/tùy chỉnh giao diện. Một số phiên bản đặt mục này dưới **Publish**. Trong các lựa chọn hiện có về giao diện/chủ đề/màu, ưu tiên chủ đề sáng và màu `#263D52` nếu có ô màu. Tính năng và nhãn phụ thuộc phiên bản/gói. Lưu và Publish rồi mở lại chatbot. Không có tùy chọn tương ứng thì giao diện iframe vẫn theo Dify; CSS của website không đổi được nội dung khác tên miền bên trong nó. [Thiết lập Web App Dify](https://docs.dify.ai/en/cloud/use-dify/publish/webapp/web-app-settings).
 
 Mã dùng iframe trực tiếp, không phải nút chat nổi. Các biến màu dành cho nút bubble trong tài liệu Dify không thay màu toàn bộ iframe. [Các hình thức nhúng](https://docs.dify.ai/en/cloud/use-dify/publish/webapp/embedding-in-websites).
 
@@ -106,7 +106,7 @@ Trước mỗi lần sửa lớn, giữ bản ZIP hoạt động tốt. Khi bàn
 
 GitHub Pages phục vụ tệp tĩnh; đăng nhập quản trị thật, cơ sở dữ liệu hoặc xử lý hồ sơ cần dịch vụ phía máy chủ phù hợp. [GitHub Pages là gì](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages).
 
-Website không đọc được trạng thái đăng nhập, phản hồi hoặc lịch sử trong iframe khác tên miền. Không coi sự kiện iframe tải xong là chứng nhận chatbot khỏe. Nội dung trả lời và việc quản lý dữ liệu nằm ở Dify; việc kiểm tra giao diện không thay thế rà soát tính chính xác của kiến thức chatbot. Trên điện thoại thấp, có thể cần cuộn trang để tới phần liên hệ. Khung ngoài tối thiểu 472px, không còn áp dụng mức tối thiểu 700px của bản trước.
+Website không đọc được trạng thái đăng nhập, phản hồi hoặc lịch sử trong iframe khác tên miền. Không coi sự kiện iframe tải xong là chứng nhận chatbot khỏe. Nội dung trả lời và việc quản lý dữ liệu nằm ở Dify; việc kiểm tra giao diện không thay thế rà soát tính chính xác của kiến thức chatbot. Trên điện thoại thấp, có thể cần cuộn trang để tới phần liên hệ. Khung ngoài tối thiểu 510px, không còn áp dụng mức tối thiểu 700px của bản trước.
 
 ## 9. Thêm thông tin vào các khoảng trống mới
 
@@ -116,4 +116,12 @@ Trong `index.html`, ba vùng đã có chú thích để tìm nhanh:
 - `information-left`: cột bên trái chatbot trên máy tính, phù hợp thông tin hữu ích hoặc liên kết.
 - `information-bottom`: vùng phía dưới chatbot, trước thông tin liên hệ.
 
-Thêm nội dung HTML vào giữa thẻ mở/đóng của vùng tương ứng. Hiện các vùng để trống theo yêu cầu, không có nội dung mẫu trên trang. Cột trái chiếm khoảng 1/3 phần nội dung, chatbot chiếm khoảng 2/3 sau khi trừ khoảng cách giữa cột. Chiều cao chatbot cũng giảm còn khoảng 2/3 so với bản trước, tối thiểu 472px gồm viền. Trên điện thoại, cột trái sẽ xếp phía trên chatbot khi có nội dung; khi trống thì tự ẩn. Khung chatbot dùng đủ chiều ngang điện thoại để giữ ô nhập dễ sử dụng.
+Thêm nội dung HTML vào giữa thẻ mở/đóng của vùng tương ứng. Cột trái hiện có phần giới thiệu tính năng chatbot; các vùng trên và dưới vẫn để trống. Sửa trực tiếp nội dung trong phần information-left để đổi lời giới thiệu. Cột trái chiếm khoảng 1/3 phần nội dung, chatbot chiếm khoảng 2/3 sau khi trừ khoảng cách giữa cột. Chiều cao chatbot cũng giảm còn khoảng 2/3 so với bản trước, tối thiểu 510px gồm viền. Trên điện thoại, cột trái sẽ xếp phía trên chatbot khi có nội dung; khi trống thì tự ẩn. Khung chatbot dùng đủ chiều ngang điện thoại để giữ ô nhập dễ sử dụng.
+
+## 10. Giao diện xanh than, nền xám sáng
+
+Bản thiết kế ngày 22/10/2026 dùng `primary: "#263D52"`, `background: "#F3F5F7"`, `text: "#213044"` trong `config.js`. Bố cục có đầu trang, ba tính năng được đánh số ở cột trái, nút liên kết tới khung chat và thông tin liên hệ ở cuối. Khung chat có thanh tiêu đề riêng; `.chat-stage` là vùng thực sự chứa iframe và phải giữ `min-height: 0` để không cắt ô nhập.
+
+Khi cập nhật từ bản xanh mạ non, thay đủ `index.html`, `styles.css`, `config.js`, `favicon.svg`. Chỉ thay HTML/CSS sẽ để cấu hình màu cũ ghi đè giao diện mới. Mã phiên bản sau `?v=` ở đường dẫn CSS/cấu hình/favicon trong HTML giúp trình duyệt nhận tài nguyên mới; khi chỉnh các tệp này ở lần sau, có thể đổi mã `v` để tránh dùng bản lưu cũ.
+
+Nút “Bắt đầu trò chuyện” chỉ đưa người dùng tới khung chat bằng liên kết `#chat`; không tự gửi tin nhắn. Biểu tượng LT là ký hiệu chữ đơn giản của trang, không phải biểu trưng ngành. Màu trong iframe Dify vẫn cần chỉnh ở ứng dụng Dify nếu muốn đồng bộ.

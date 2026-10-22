@@ -3,47 +3,50 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#B8E65C">
+  <meta name="theme-color" content="#263D52">
   <meta name="description" content="Trợ lý ảo AI CAX LỆ THỦY version 1.1 — Công an xã Lệ Thủy.">
   <title>Trợ lý ảo AI CAX LỆ THỦY version 1.1</title>
-  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="./styles.css">
-  <script src="./config.js" defer></script>
+  <link rel="icon" href="./favicon.svg?v=slate-20261022" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css?v=slate-20261022">
+  <script src="./config.js?v=slate-20261022" defer></script>
   <script src="./app.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#chat">Đến khung trò chuyện</a>
   <main class="page">
-    <header class="page-header"><h1 id="page-title">Trợ lý ảo AI CAX LỆ THỦY version 1.1</h1></header>
+    <header class="page-header">
+      <div class="brand-mark" aria-hidden="true">LT<span></span></div>
+      <div class="brand-copy"><span class="brand-caption">CÔNG AN XÃ LỆ THỦY</span><h1 id="page-title">Trợ lý ảo AI CAX LỆ THỦY version 1.1</h1></div>
+      <span class="header-note">Hướng dẫn &amp; tra cứu</span>
+    </header>
     <div class="chat-layout">
-      <div class="information-top">
-        <!-- Thêm thông báo hoặc hướng dẫn phía trên tại đây. -->
-      </div>
+      <div class="information-top"><!-- Thêm thông báo hoặc hướng dẫn phía trên tại đây. --></div>
       <aside class="information-left" aria-labelledby="intro-title">
-        <span class="intro-label">GIỚI THIỆU</span>
-        <h2 id="intro-title">Tìm hiểu thủ tục,<br>thuận tiện hơn.</h2>
-        <p>Trợ lý ảo AI CAX Lệ Thủy hỗ trợ bạn tìm hiểu thông tin về đăng ký xe ngay trong cuộc trò chuyện.</p>
-        <ul class="intro-features">
-          <li>Tra cứu thông tin, giấy tờ và các bước thực hiện.</li>
-          <li>Hỏi thêm để làm rõ nội dung bạn quan tâm.</li>
-          <li>Tham khảo nguồn tài liệu khi câu trả lời có trích dẫn.</li>
-        </ul>
-        <p class="intro-hint">Nhập câu hỏi vào khung chat để bắt đầu.</p>
+        <span class="intro-label"><span aria-hidden="true"></span> KHÔNG GIAN HỎI ĐÁP</span>
+        <h2 id="intro-title">Tra cứu thủ tục,<br><span>thuận tiện hơn.</span></h2>
+        <p class="intro-description">Cùng trợ lý AI tìm hiểu thông tin về đăng ký xe, từng câu hỏi một.</p>
+        <ol class="intro-features">
+          <li><span class="feature-number" aria-hidden="true">01</span><div><h3>Tra cứu thông tin</h3><p>Tìm hiểu giấy tờ và các bước thực hiện.</p></div></li>
+          <li><span class="feature-number" aria-hidden="true">02</span><div><h3>Hỏi đáp dễ dàng</h3><p>Hỏi thêm để làm rõ điều bạn quan tâm.</p></div></li>
+          <li><span class="feature-number" aria-hidden="true">03</span><div><h3>Tham khảo nguồn</h3><p>Xem tài liệu khi câu trả lời có trích dẫn.</p></div></li>
+        </ol>
+        <a class="start-chat" href="#chat">Bắt đầu trò chuyện <span aria-hidden="true">↗</span></a>
       </aside>
-    <section id="chat" class="chat" aria-label="Khung trò chuyện Dify">
-      <p id="configuration-message" class="configuration-message" role="status" hidden></p>
-      <iframe id="chatbot-frame"
-        src="https://udify.app/chatbot/HjnCerBBdMUvrvvO"
-        title="Trò chuyện với Trợ lý ảo AI CAX LỆ THỦY version 1.1"
-        allow="microphone;clipboard-write"
-        referrerpolicy="strict-origin-when-cross-origin"></iframe>
-    </section>
-      <div class="information-bottom">
-        <!-- Thêm ghi chú hoặc thông tin phía dưới tại đây. -->
-      </div>
+      <section id="chat" class="chat" aria-label="Khung trò chuyện Dify">
+        <header class="chat-heading">
+          <span class="chat-symbol" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6 17.5 3.5 20v-13A3.5 3.5 0 0 1 7 3.5h10A3.5 3.5 0 0 1 20.5 7v7a3.5 3.5 0 0 1-3.5 3.5H6Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 8.5h8M8 12.5h5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+          <div><h2>Trò chuyện với trợ lý</h2><p>Bạn muốn tìm hiểu điều gì hôm nay?</p></div>
+        </header>
+        <div class="chat-stage">
+          <p id="configuration-message" class="configuration-message" role="status" hidden></p>
+          <iframe id="chatbot-frame" src="https://udify.app/chatbot/HjnCerBBdMUvrvvO" title="Trò chuyện với Trợ lý ảo AI CAX LỆ THỦY version 1.1" allow="microphone;clipboard-write" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+      </section>
+      <div class="information-bottom"><!-- Thêm ghi chú hoặc thông tin phía dưới tại đây. --></div>
     </div>
     <footer class="contact" aria-label="Thông tin liên hệ">
-      <p><strong id="contact-organization">Công an xã Lệ Thủy</strong><span class="separator" aria-hidden="true">—</span><span>SĐT: <a id="contact-phone" href="tel:0323882768">0323.882.768</a></span></p>
+      <span class="contact-label">LIÊN HỆ HỖ TRỢ</span>
+      <p><strong id="contact-organization">Công an xã Lệ Thủy</strong><span class="separator" aria-hidden="true">/</span><span>SĐT: <a id="contact-phone" href="tel:0323882768">0323.882.768</a></span></p>
     </footer>
   </main>
 </body>

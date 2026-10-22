@@ -1,46 +1,34 @@
-# Kết quả chạy thử — phiên bản 1.1
+# Kết quả kiểm tra — giao diện xanh than
 
-Ngày kiểm tra: 20/10/2026, múi giờ Asia/Bangkok. Chạy bằng máy chủ HTTP cục bộ và trình duyệt trong Codex. Chưa xuất bản lên GitHub theo yêu cầu.
+Ngày kiểm tra: 22/10/2026 (Asia/Bangkok). Đây là bản thiết kế mới của Trợ lý ảo AI CAX LỆ THỦY version 1.1. Chưa tự xuất bản lên GitHub.
 
-## Kết quả
+## Thay đổi
+
+- Nền xám sáng `#F3F5F7`, điểm nhấn xanh than `#263D52`, chữ `#213044`.
+- Đầu trang gọn với ký hiệu chữ LT, ba tính năng đánh số ở bên trái và nút “Bắt đầu trò chuyện”.
+- Khung chat bên phải có tiêu đề riêng, chiều rộng khoảng 2/3 vùng nội dung và chiều cao được giới hạn; vùng iframe tối thiểu khoảng 440px ở cửa sổ thấp.
+- Giữ khoảng trống trên/dưới cho thông tin bổ sung và liên hệ cuối trang.
+- Đường dẫn CSS, cấu hình và favicon có mã phiên bản để tránh dùng lại tài nguyên cũ.
+
+## Đã kiểm tra
 
 | Hạng mục | Kết quả |
 | --- | --- |
-| Cú pháp JavaScript | `app.js` và `config.js` vượt qua kiểm tra cú pháp bằng Node |
-| Tệp giao diện | HTML, CSS, JavaScript, favicon và `.nojekyll` trả HTTP 200 |
-| Đường dẫn tài nguyên | Dùng `./...`; bốn tệp được HTML tham chiếu đều tồn tại |
-| Tiêu đề | Đúng `Trợ lý ảo AI CAX LỆ THỦY version 1.1` |
-| Màu chủ đạo thực tế | `#B8E65C`; nền `#F1F8E5`; chữ `#203512` |
-| Độ tương phản màu chữ/nền | Khoảng 9,19:1 trên xanh chính và 12,22:1 trên nền nhạt |
-| Liên hệ | Công an xã Lệ Thủy — SĐT: 0323.882.768 |
-| Liên kết gọi điện | Đúng `tel:0323882768`; không thực hiện cuộc gọi |
-| Chatbot | Đúng URL, iframe hiện giao diện Dify, ô nhập và phản hồi có sẵn trong phiên |
-| Quyền iframe | Giữ `microphone;clipboard-write` và có `title` |
-| Lỗi trình duyệt | Không ghi nhận lỗi ở mức error trong lần kiểm tra |
+| Máy tính 1366 × 960 | Không tràn ngang; khung khoảng 828 × 540px; iframe khoảng 469px, vừa vùng chứa |
+| Điện thoại 390 × 844 | Không tràn ngang; giới thiệu ở trên chatbot; khung cao khoảng 510px |
+| Máy tính bảng 768 × 1024 | Không tràn ngang; iframe vừa vùng chứa |
+| Bộ màu thực tế trong trình duyệt | Xác nhận nền rgb(243,245,247) và primary #263D52, không còn màu cấu hình xanh mạ non |
+| Nút Bắt đầu trò chuyện | Nhấp đưa tới #chat; không gửi tin nhắn |
+| Liên hệ | Đúng Công an xã Lệ Thủy; liên kết tel:0323882768 |
+| Chatbot | Đúng URL; hiển thị giao diện, ô nhập và phản hồi có sẵn trong phiên |
+| JavaScript | Cú pháp app.js/config.js hợp lệ; không ghi nhận lỗi trình duyệt trong lượt kiểm tra |
 
-## Kiểm tra bố cục
+Kích thước thực có thể làm tròn khoảng 1px do tỷ lệ hiển thị thiết bị. Đã lưu ảnh tại `kiem-tra/giao-dien-xanh-than-may-tinh.png` và `kiem-tra/giao-dien-xanh-than-dien-thoai.png`. Ảnh không nằm trong ZIP đưa lên GitHub.
 
-Kích thước dưới đây là kích thước yêu cầu; trình duyệt có thể làm tròn khoảng 1px do tỉ lệ hiển thị của thiết bị.
+## Phạm vi chưa kiểm tra
 
-| Kích thước | Chiều cao khung gồm viền | Tràn ngang trang ngoài | Bị cắt bởi khung ngoài |
-| --- | --- | --- | --- |
-| Máy tính 1366 × 960 | Khoảng 540px | Không | Không |
-| Máy tính bảng 768 × 1024 | Khoảng 583px | Không | Không |
-| Điện thoại 390 × 844 | Khoảng 503px | Không | Không |
-| Điện thoại nhỏ 360 × 640 | Khoảng 472px | Không | Không |
+Chưa xuất bản bản thiết kế này lên GitHub Pages. Kích thước điện thoại/máy tính bảng là mô phỏng trong trình duyệt, chưa thay thế kiểm tra trên thiết bị thật. Chưa mở microphone, ghi âm, ghi clipboard hoặc gọi số liên hệ; chỉ giữ thuộc tính quyền và liên kết. Không sửa hoặc kiểm định kiến thức/mô hình/phản hồi của Dify. Giao diện bên trong iframe vẫn do Dify quản lý.
 
-Đã thu nhỏ chatbot theo yêu cầu mới và cập nhật ảnh chạy thử. Trên máy tính 1366 × 960, khung rộng khoảng 863px (65,5% bề rộng nội dung, sau khi trừ khoảng cách giữa cột), cao khoảng 540px, tương ứng gần 2/3 chiều rộng và chiều cao bản trước. Bên trái khung chừa khoảng 456px gồm khoảng cách giữa cột; vùng trống phía trên cao tối thiểu 48px, phía dưới 72px, cùng các khoảng cách giữa hàng.
+## Tệp cần cập nhật
 
-Trên điện thoại, giữ đủ chiều ngang để không bó hẹp ô nhập, giảm chiều cao còn khoảng 2/3 bản trước với mức tối thiểu 472px gồm viền. Cột trái trống được ẩn; khi bổ sung nội dung sẽ xếp phía trên chatbot. Không có nội dung mẫu trong các vùng trống. Tiêu đề, link chatbot, quyền iframe và số điện thoại giữ nguyên. Người dùng có thể cuộn trang tới phần liên hệ trên màn hình thấp.
-
-## Phạm vi chưa xác minh
-
-- Chưa triển khai trên tài khoản GitHub hoặc tên miền thật; cần kiểm tra lại sau khi tự xuất bản.
-- Điện thoại/máy tính bảng là kích thước mô phỏng trong trình duyệt, chưa thay thế thử trên thiết bị thật hoặc mọi trình duyệt.
-- Chưa mở microphone, thử ghi âm hay thực hiện ghi clipboard; chỉ xác nhận thuộc tính cho phép trong iframe được giữ đúng.
-- Không thay đổi cấu hình Dify, mô hình, kiến thức, hạn mức hoặc quyền truy cập. Không đánh giá tính chính xác của nội dung trả lời.
-- Chatbot đã hiển thị hội thoại trong phiên có sẵn; không gửi thêm dữ liệu cá nhân hoặc tạo câu hỏi mới trong lượt kiểm tra này.
-- Màu bên trong iframe vẫn thuộc ứng dụng Dify; chưa đổi từ trang bao ngoài.
-- Phiên kiểm tra tải được chatbot, nhưng không bảo đảm dịch vụ Dify luôn sẵn sàng ở mọi thời điểm.
-
-Ảnh chạy thử được bàn giao riêng tại `kiem-tra/may-tinh.png` và `kiem-tra/dien-thoai.png` trong thư mục làm việc, không cần đưa các ảnh này lên GitHub. Tệp ZIP chứa bộ mã và tài liệu, không chứa ảnh hội thoại.
+Gói `Cap-nhat-giao-dien-xanh-than.zip` có đúng bốn tệp: `index.html`, `styles.css`, `config.js`, `favicon.svg`. Cần tải đủ cả bốn lên cùng vị trí tệp cũ. Tệp app.js giữ nguyên. Bộ mã đầy đủ và tài liệu nằm trong `Tro-ly-ao-CAX-Le-Thuy-giao-dien-xanh-than.zip`.

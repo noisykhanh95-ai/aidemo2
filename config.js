@@ -7,9 +7,9 @@ window.CHATBOT_CONFIG = {
   chatbotUrl: "https://udify.app/chatbot/HjnCerBBdMUvrvvO",
   // Màu trang bao ngoài, dạng #RRGGBB. Màu bên trong chatbot chỉnh tại Dify.
   colors: {
-    primary: "#B8E65C",
-    background: "#F1F8E5",
-    text: "#203512"
+    primary: "#263D52",
+    background: "#F3F5F7",
+    text: "#213044"
   },
   contact: {
     organization: "Công an xã Lệ Thủy",
