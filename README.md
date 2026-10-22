@@ -1,6 +1,6 @@
 # Trợ lý ảo AI CAX LỆ THỦY version 1.1
 
-Trang tĩnh màu xanh mạ non với tiêu đề, chatbot Dify và liên hệ Công an xã Lệ Thủy — SĐT: 0323.882.768. Khung chatbot đã thu còn khoảng 2/3 chiều rộng và chiều cao bản trước trên máy tính, nằm bên phải; chừa vùng trống phía trên, dưới và bên trái để bổ sung thông tin. Trên điện thoại, chatbot dùng đủ chiều ngang và giảm chiều cao để vẫn dễ nhập tin nhắn. Không cần cài thư viện hoặc build.
+Trang tĩnh màu xanh mạ non với tiêu đề, chatbot Dify và liên hệ Công an xã Lệ Thủy — SĐT: 0323.882.768. Khung chatbot đã thu còn khoảng 2/3 chiều rộng và chiều cao bản trước trên máy tính, nằm bên phải; cột trái có phần giới thiệu tính năng; phía trên và dưới còn khoảng trống để bổ sung thông tin. Trên điện thoại, chatbot dùng đủ chiều ngang và giảm chiều cao để vẫn dễ nhập tin nhắn. Không cần cài thư viện hoặc build.
 
 ## Bắt đầu
 

@@ -21,6 +21,14 @@ h1 { margin: 0; padding-left: 14px; border-left: 5px solid var(--text); font-siz
 .information-top, .information-bottom { grid-column: 1 / -1; min-width: 0; overflow-wrap: anywhere; }
 .information-top { min-height: 48px; }
 .information-left { grid-column: 1; min-width: 0; overflow-wrap: anywhere; }
+.information-left { align-self: start; max-width: 400px; padding: 22px 24px 16px 0; }
+.intro-label { font-size: 11px; font-weight: 700; letter-spacing: 1.8px; }
+.information-left h2 { margin: 16px 0; font-size: clamp(23px, 2.2vw, 32px); line-height: 1.35; font-weight: 600; text-wrap: balance; }
+.information-left p { margin: 0; font-size: 14px; line-height: 1.85; }
+.intro-features { display: grid; gap: 13px; margin: 24px 0; padding-left: 19px; font-size: 14px; line-height: 1.7; }
+.intro-features li { padding-left: 3px; }
+.intro-features li::marker { color: #5a7c24; }
+.information-left .intro-hint { border-top: 1px solid #ccdda9; padding-top: 17px; font-size: 13px; }
 .information-bottom { min-height: 72px; }
 .chat { grid-column: 2; position: relative; height: calc((100svh - 150px) * 2 / 3); min-height: 472px; min-width: 0; overflow: hidden; background: #fff; border: 3px solid var(--primary); border-radius: 12px; }
 .chat iframe { display: block; width: 100%; height: 100%; min-height: 0; border: 0; }
@@ -35,7 +43,9 @@ h1 { margin: 0; padding-left: 14px; border-left: 5px solid var(--text); font-siz
   h1 { padding-left: 10px; font-size: 20px; line-height: 1.4; }
   .chat-layout { grid-template-columns: minmax(0, 1fr); gap: 16px; }
   .information-top { min-height: 24px; }
-  .information-left { grid-column: 1; }
+  .information-left { grid-column: 1; max-width: none; padding: 0 4px 12px; }
+  .information-left h2 { margin: 10px 0; font-size: 25px; }
+  .intro-features { gap: 8px; margin: 16px 0; }
   .information-left:empty { display: none; }
   .information-bottom { min-height: 48px; }
   .chat { grid-column: 1; height: calc((100svh - 90px) * 2 / 3); border-radius: 9px; }
